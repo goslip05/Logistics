@@ -26,7 +26,7 @@
                     <div class="bottom-0 p-1 border-2 border-white bg-success rounded-circle position-absolute end-0"></div>
                 </div>
                 <div class="ms-3">
-                    <h6 class="mb-0">Jhon Doe</h6>
+                    <h6 class="mb-0">{{ Auth::user()->name }}</h6>
                     <span>Admin</span>
                 </div>
             </div>
@@ -138,12 +138,23 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <img class="rounded-circle me-lg-2" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                        <span class="d-none d-lg-inline-flex">John Doe</span>
+                        <span class="d-none d-lg-inline-flex">{{ Auth::user()->name }}</span>
                     </a>
                     <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
-                        <a href="#" class="dropdown-item">My Profile</a>
+                        
+                        <x-responsive-nav-link :href="route('profile.edit')" class="dropdown-item">
+                            {{ __('My Profile') }}
+                        </x-responsive-nav-link>
                         <a href="#" class="dropdown-item">Settings</a>
-                        <a href="#" class="dropdown-item">Log Out</a>
+                        <form method="POST" class="dropdown-item" action="{{ route('logout') }}">
+                            @csrf
+        
+                            <x-responsive-nav-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-responsive-nav-link>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -437,15 +448,5 @@
     </div>
     <!-- Content End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="{{ asset('js/main.js') }}"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/chart/chart.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
 </x-app-layout>
