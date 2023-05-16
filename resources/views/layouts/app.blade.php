@@ -20,7 +20,7 @@
 
         <!-- Scripts -->
          <!-- Scripts -->
-         @vite(['resources/css/app.css', /* 'resources/js/app.js' */'resources/css/style.css','resources/css/bootstrap.min.css'])
+         @vite(['resources/css/app.css', /* 'resources/js/app.js' */'resources/css/style.css','resources/css/bootstrap.min.css', 'resources/js/main.js'])
         <!-- Customized Bootstrap Stylesheet -->
     <link href="public/resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/resources/css/style.css" rel="stylesheet">

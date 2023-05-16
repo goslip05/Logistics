@@ -18,11 +18,11 @@
     <div class="pb-3 sidebar pe-4">
         <nav class="navbar bg-light navbar-light">
             <a href="index.html" class="mx-4 mb-3 navbar-brand">
-                <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Logistics</h3>
             </a>
             <div class="mb-4 d-flex align-items-center ms-4">
                 <div class="position-relative">
-                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                     <div class="bottom-0 p-1 border-2 border-white bg-success rounded-circle position-absolute end-0"></div>
                 </div>
                 <div class="ms-3">
@@ -80,7 +80,7 @@
                     <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
                         <a href="#" class="dropdown-item">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                                 <div class="ms-2">
                                     <h6 class="mb-0 fw-normal">Jhon send you a message</h6>
                                     <small>15 minutes ago</small>
@@ -90,7 +90,7 @@
                         <hr class="dropdown-divider">
                         <a href="#" class="dropdown-item">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                                 <div class="ms-2">
                                     <h6 class="mb-0 fw-normal">Jhon send you a message</h6>
                                     <small>15 minutes ago</small>
@@ -100,7 +100,7 @@
                         <hr class="dropdown-divider">
                         <a href="#" class="dropdown-item">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                                 <div class="ms-2">
                                     <h6 class="mb-0 fw-normal">Jhon send you a message</h6>
                                     <small>15 minutes ago</small>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <img class="rounded-circle me-lg-2" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                         <span class="d-none d-lg-inline-flex">John Doe</span>
                     </a>
                     <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
@@ -305,7 +305,7 @@
                             <a href="">Show All</a>
                         </div>
                         <div class="py-3 d-flex align-items-center border-bottom">
-                            <img class="flex-shrink-0 rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                         <div class="py-3 d-flex align-items-center border-bottom">
-                            <img class="flex-shrink-0 rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -325,7 +325,7 @@
                             </div>
                         </div>
                         <div class="py-3 d-flex align-items-center border-bottom">
-                            <img class="flex-shrink-0 rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -335,7 +335,7 @@
                             </div>
                         </div>
                         <div class="pt-3 d-flex align-items-center">
-                            <img class="flex-shrink-0 rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -438,6 +438,7 @@
     <!-- Content End -->
 
     <!-- JavaScript Libraries -->
+    <script src="{{ asset('js/main.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/chart/chart.min.js"></script>
