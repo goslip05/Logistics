@@ -18,17 +18,26 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg==" crossorigin="anonymous" /> --}}
+
         <!-- Libraries Stylesheet -->
-        {{-- <link href="resources/js/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="resources/js/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> --}}
+        <link href="resources/js/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="resources/js/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> 
+
+       {{--  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA==" crossorigin="anonymous"></script> --}}
+
+
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        
          <!-- Scripts -->
          @vite(['resources/css/app.css', /* 'resources/js/app.js' */'resources/css/style.css','resources/css/bootstrap.min.css', 'resources/js/main.js', 'resources/js/lib/chart/chart.min.js', 'resources/js/lib/easing/easing.min.js','resources/js/lib/waypoints/waypoints.min.js','resources/js/lib/owlcarousel/owl.carousel.min.js','resources/js/lib/tempusdominus/js/moment.min.js','resources/js/lib/tempusdominus/js/moment-timezone.min.js','resources/js/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js',
          'resources/js/lib/owlcarousel/assets/owl.carousel.min.css',
-         'resources/css/tempusdominus/tempusdominus-bootstrap-4.min.css'])
+         'resources/js/tempusdominus/tempusdominus-bootstrap-4.min.css']) 
         <!-- Customized Bootstrap Stylesheet -->
        
        

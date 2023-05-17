@@ -34,11 +34,11 @@
 
 
     // Progress Bar
-    $('.pg-bar').waypoint(function () {
+   /*  $('.pg-bar').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
+    }, {offset: '80%'}); */
 
 
     // Calender
