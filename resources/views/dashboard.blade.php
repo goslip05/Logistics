@@ -33,24 +33,24 @@
             <div class="navbar-nav w-100">
                 <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Eventos</a>
                     <div class="bg-transparent border-0 dropdown-menu">
-                        <a href="button.html" class="dropdown-item">Buttons</a>
-                        <a href="typography.html" class="dropdown-item">Typography</a>
-                        <a href="element.html" class="dropdown-item">Other Elements</a>
+                        <a href="button.html" class="dropdown-item">Ver Eventos</a>
+                        <a href="typography.html" class="dropdown-item">Nuevo Evento</a>
+                        {{-- <a href="element.html" class="dropdown-item">Certificados</a> --}}
                     </div>
                 </div>
-                <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Conferencias</a>
+                <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Pagos</a>
+                <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Certificados</a>
+                {{-- <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Clientes</a> --}}
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Clientes</a>
                     <div class="bg-transparent border-0 dropdown-menu">
-                        <a href="signin.html" class="dropdown-item">Sign In</a>
-                        <a href="signup.html" class="dropdown-item">Sign Up</a>
-                        <a href="404.html" class="dropdown-item">404 Error</a>
-                        <a href="blank.html" class="dropdown-item">Blank Page</a>
+                        <a href="signin.html" class="dropdown-item">Ver Clientes</a>
+                        <a href="signup.html" class="dropdown-item">Registrar cliente</a>
+                        {{-- <a href="404.html" class="dropdown-item">404 Error</a>
+                        <a href="blank.html" class="dropdown-item">Blank Page</a> --}}
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <i class="fa fa-envelope me-lg-2"></i>
-                        <span class="d-none d-lg-inline-flex">Message</span>
+                        <span class="d-none d-lg-inline-flex">Mensajes</span>
                     </a>
                     <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
                         <a href="#" class="dropdown-item">
@@ -114,7 +114,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <i class="fa fa-bell me-lg-2"></i>
-                        <span class="d-none d-lg-inline-flex">Notificatin</span>
+                        <span class="d-none d-lg-inline-flex">Notificaciones</span>
                     </a>
                     <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
                         <a href="#" class="dropdown-item">
@@ -143,16 +143,16 @@
                     <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
                         
                         <x-responsive-nav-link :href="route('profile.edit')" class="dropdown-item">
-                            {{ __('My Profile') }}
+                            {{ __('Mi Perfil') }}
                         </x-responsive-nav-link>
-                        <a href="#" class="dropdown-item">Settings</a>
+                        {{-- <a href="#" class="dropdown-item">Settings</a> --}}
                         <form method="POST" class="dropdown-item" action="{{ route('logout') }}">
                             @csrf
         
                             <x-responsive-nav-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('Cerrar Sesión') }}
                             </x-responsive-nav-link>
                         </form>
                     </div>
@@ -169,8 +169,8 @@
                     <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
                         <i class="fa fa-chart-line fa-3x text-primary"></i>
                         <div class="ms-3">
-                            <p class="mb-2">Today Sale</p>
-                            <h6 class="mb-0">$1234</h6>
+                            <p class="mb-2">Eventos</p>
+                            <h6 class="mb-0">12</h6>
                         </div>
                     </div>
                 </div>
@@ -178,8 +178,8 @@
                     <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
                         <i class="fa fa-chart-bar fa-3x text-primary"></i>
                         <div class="ms-3">
-                            <p class="mb-2">Total Sale</p>
-                            <h6 class="mb-0">$1234</h6>
+                            <p class="mb-2">Total Pagos</p>
+                            <h6 class="mb-0">$3.600.000</h6>
                         </div>
                     </div>
                 </div>
@@ -187,8 +187,8 @@
                     <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
                         <i class="fa fa-chart-area fa-3x text-primary"></i>
                         <div class="ms-3">
-                            <p class="mb-2">Today Revenue</p>
-                            <h6 class="mb-0">$1234</h6>
+                            <p class="mb-2">Clientes</p>
+                            <h6 class="mb-0">300</h6>
                         </div>
                     </div>
                 </div>
@@ -196,8 +196,8 @@
                     <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
                         <i class="fa fa-chart-pie fa-3x text-primary"></i>
                         <div class="ms-3">
-                            <p class="mb-2">Total Revenue</p>
-                            <h6 class="mb-0">$1234</h6>
+                            <p class="mb-2">Conferencistas</p>
+                            <h6 class="mb-0">20</h6>
                         </div>
                     </div>
                 </div>
@@ -429,18 +429,18 @@
 
 
         <!-- Footer Start -->
-        <div class="px-4 pt-4 container-fluid">
+        <div class="justify-end px-4 pt-4 container-fluid">
             <div class="p-4 bg-light rounded-top">
-                <div class="row">
-                    <div class="text-center col-12 col-sm-6 text-sm-start">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                <div class="row" style="display: flex;justify-content: center;">
+                    <div class="text-center col-12 col-sm-6 ">
+                        &copy; <a href="#">Logistics</a>, All Right Reserved. 
                     </div>
-                    <div class="text-center col-12 col-sm-6 text-sm-end">
+                    {{-- <div class="text-center col-12 col-sm-6 text-sm-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                     </br>
                     Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

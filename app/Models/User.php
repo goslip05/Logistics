@@ -12,6 +12,13 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+/*     protected $connection = 'mysql';
+    protected $table = 'Empleado';
+    protected $username = 'correo';
+    protected $email = 'correo';
+    protected $password = 'contraseña'; */
+
+
     /**
      * The attributes that are mass assignable.
      *
@@ -23,6 +30,16 @@ class User extends Authenticatable
         'password',
     ];
 
+    /*  protected $fillable = [
+        'cedula',
+        'nombre',
+        'apellido',
+        'telefono',
+        'correo',
+        'contraseña',
+        'tipoEmpleado',
+    ]; 
+ */
     /**
      * The attributes that should be hidden for serialization.
      *
