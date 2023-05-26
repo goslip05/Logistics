@@ -18,7 +18,7 @@
     <div class="pb-3 sidebar pe-4">
         <nav class="navbar bg-light navbar-light">
             <a href="index.html" class="mx-4 mb-3 navbar-brand">
-                <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Logistics</h3>
+                <h3 class="text-primary">Logistics</h3>
             </a>
             <div class="mb-4 d-flex align-items-center ms-4">
                 <div class="position-relative">
@@ -69,7 +69,7 @@
                 <i class="fa fa-bars"></i>
             </a>
             <form class="d-none d-md-flex ms-4">
-                <input class="border-0 form-control" type="search" placeholder="Search">
+                <input class="border-0 form-control" type="search" placeholder="Buscar">
             </form>
             <div class="navbar-nav align-items-center ms-auto">
                 <div class="nav-item dropdown">
@@ -205,7 +205,7 @@
         </div>
         <!-- Sale & Revenue End -->
 
-
+{{-- 
         <!-- Sales Chart Start -->
         <div class="px-4 pt-4 container-fluid">
             <div class="row g-4">
@@ -229,27 +229,27 @@
                 </div>
             </div>
         </div>
-        <!-- Sales Chart End -->
+        <!-- Sales Chart End --> --}}
 
 
         <!-- Recent Sales Start -->
         <div class="px-4 pt-4 container-fluid">
             <div class="p-4 text-center rounded bg-light">
                 <div class="mb-4 d-flex align-items-center justify-content-between">
-                    <h6 class="mb-0">Recent Salse</h6>
-                    <a href="">Show All</a>
+                    <h6 class="mb-0">Pagos Recientes</h6>
+                    <a href="">Ver Todos</a>
                 </div>
                 <div class="table-responsive">
                     <table class="table mb-0 align-middle text-start table-bordered table-hover">
                         <thead>
                             <tr class="text-dark">
                                 <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Invoice</th>
-                                <th scope="col">Customer</th>
-                                <th scope="col">Amount</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Factura</th>
+                                <th scope="col">Clientes</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -260,7 +260,7 @@
                                 <td>Jhon Doe</td>
                                 <td>$123</td>
                                 <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
                             </tr>
                             <tr>
                                 <td><input class="form-check-input" type="checkbox"></td>
@@ -269,7 +269,7 @@
                                 <td>Jhon Doe</td>
                                 <td>$123</td>
                                 <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
                             </tr>
                             <tr>
                                 <td><input class="form-check-input" type="checkbox"></td>
@@ -278,7 +278,7 @@
                                 <td>Jhon Doe</td>
                                 <td>$123</td>
                                 <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
                             </tr>
                             <tr>
                                 <td><input class="form-check-input" type="checkbox"></td>
@@ -287,7 +287,7 @@
                                 <td>Jhon Doe</td>
                                 <td>$123</td>
                                 <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
                             </tr>
                             <tr>
                                 <td><input class="form-check-input" type="checkbox"></td>
@@ -296,7 +296,7 @@
                                 <td>Jhon Doe</td>
                                 <td>$123</td>
                                 <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
                             </tr>
                         </tbody>
                     </table>
