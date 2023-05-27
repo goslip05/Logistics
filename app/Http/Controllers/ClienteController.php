@@ -10,7 +10,8 @@ class ClienteController extends Controller
     public function index()
     {
         try {
-            dd('prueba');
+            
+            return view('pages.inscripcion');
 
 
 

@@ -27,7 +27,7 @@
                 </div>
                 <div class="ms-3">
                     <h6 class="mb-0">{{ Auth::user()->name }}</h6>
-                    <span>Admin</span>
+                    <span>Usuario</span>
                 </div>
             </div>
             <div class="navbar-nav w-100">
@@ -41,18 +41,8 @@
                     </div>
                 </div>
                 <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Conferencias</a>
-                <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Pagos</a>
-                <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Certificados</a>
-                {{-- <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Clientes</a> --}}
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Clientes</a>
-                    <div class="bg-transparent border-0 dropdown-menu">
-                        <a href="signin.html" class="dropdown-item">Ver Clientes</a>
-                        <a href="signup.html" class="dropdown-item">Registrar cliente</a>
-                        {{-- <a href="404.html" class="dropdown-item">404 Error</a>
-                        <a href="blank.html" class="dropdown-item">Blank Page</a> --}}
-                    </div>
-                </div>
+                
+                
             </div>
         </nav>
     </div>
@@ -72,69 +62,7 @@
                 <input class="border-0 form-control" type="search" placeholder="Buscar">
             </form>
             <div class="navbar-nav align-items-center ms-auto">
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <i class="fa fa-envelope me-lg-2"></i>
-                        <span class="d-none d-lg-inline-flex">Mensajes</span>
-                    </a>
-                    <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
-                        <a href="#" class="dropdown-item">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                                <div class="ms-2">
-                                    <h6 class="mb-0 fw-normal">Jhon send you a message</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                            </div>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                                <div class="ms-2">
-                                    <h6 class="mb-0 fw-normal">Jhon send you a message</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                            </div>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                                <div class="ms-2">
-                                    <h6 class="mb-0 fw-normal">Jhon send you a message</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                            </div>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="text-center dropdown-item">See all message</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <i class="fa fa-bell me-lg-2"></i>
-                        <span class="d-none d-lg-inline-flex">Notificaciones</span>
-                    </a>
-                    <div class="m-0 border-0 dropdown-menu dropdown-menu-end bg-light rounded-0 rounded-bottom">
-                        <a href="#" class="dropdown-item">
-                            <h6 class="mb-0 fw-normal">Profile updated</h6>
-                            <small>15 minutes ago</small>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                            <h6 class="mb-0 fw-normal">New user added</h6>
-                            <small>15 minutes ago</small>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                            <h6 class="mb-0 fw-normal">Password changed</h6>
-                            <small>15 minutes ago</small>
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="text-center dropdown-item">See all notifications</a>
-                    </div>
-                </div>
+                
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         <img class="rounded-circle me-lg-2" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
@@ -161,271 +89,46 @@
         </nav>
         <!-- Navbar End -->
 
-
-        <!-- Sale & Revenue Start -->
-        <div class="px-4 pt-4 container-fluid">
-            <div class="row g-4">
-                <div class="col-sm-6 col-xl-3">
-                    <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
-                        <i class="fa fa-chart-line fa-3x text-primary"></i>
-                        <div class="ms-3">
-                            <p class="mb-2">Eventos</p>
-                            <h6 class="mb-0">12</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
-                        <i class="fa fa-chart-bar fa-3x text-primary"></i>
-                        <div class="ms-3">
-                            <p class="mb-2">Total Pagos</p>
-                            <h6 class="mb-0">$3.600.000</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
-                        <i class="fa fa-chart-area fa-3x text-primary"></i>
-                        <div class="ms-3">
-                            <p class="mb-2">Clientes</p>
-                            <h6 class="mb-0">300</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="p-4 rounded bg-light d-flex align-items-center justify-content-between">
-                        <i class="fa fa-chart-pie fa-3x text-primary"></i>
-                        <div class="ms-3">
-                            <p class="mb-2">Conferencistas</p>
-                            <h6 class="mb-0">20</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Sale & Revenue End -->
-
-{{-- 
-        <!-- Sales Chart Start -->
         <div class="px-4 pt-4 container-fluid">
             <div class="row g-4">
                 <div class="col-sm-12 col-xl-6">
-                    <div class="p-4 text-center rounded bg-light">
-                        <div class="mb-4 d-flex align-items-center justify-content-between">
-                            <h6 class="mb-0">Worldwide Sales</h6>
-                            <a href="">Show All</a>
-                        </div>
-                        <canvas id="worldwide-sales"></canvas>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-xl-6">
-                    <div class="p-4 text-center rounded bg-light">
-                        <div class="mb-4 d-flex align-items-center justify-content-between">
-                            <h6 class="mb-0">Salse & Revenue</h6>
-                            <a href="">Show All</a>
-                        </div>
-                        <canvas id="salse-revenue"></canvas>
+                    <div class="p-4 rounded bg-light h-100">
+                        <h6 class="mb-4">Formulario Inscripción Evento </h6>
+                        <form>
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="inputName"">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="inputLastName" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="inputLastName"">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="inputDocument" class="form-label">Documento</label>
+                                <input type="text" class="form-control" id="inputDocument"">
+                            </div>
+                            <div class="mb-3">
+                                <label for="InputEmail" class="form-label">Correo Electronico</label>
+                                <input type="email" class="form-control" id="InputEmail"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Ingresa tu dirección de correo electronico
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPhone" class="form-label">Telefono</label>
+                                <input type="text" class="form-control" id="inputPhone"">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Inscribirme</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Sales Chart End --> --}}
 
 
-        <!-- Recent Sales Start -->
-        <div class="px-4 pt-4 container-fluid">
-            <div class="p-4 text-center rounded bg-light">
-                <div class="mb-4 d-flex align-items-center justify-content-between">
-                    <h6 class="mb-0">Pagos Recientes</h6>
-                    <a href="">Ver Todos</a>
-                </div>
-                <div class="table-responsive">
-                    <table class="table mb-0 align-middle text-start table-bordered table-hover">
-                        <thead>
-                            <tr class="text-dark">
-                                <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                <th scope="col">Fecha</th>
-                                <th scope="col">Factura</th>
-                                <th scope="col">Clientes</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>INV-0123</td>
-                                <td>Jhon Doe</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>INV-0123</td>
-                                <td>Jhon Doe</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>INV-0123</td>
-                                <td>Jhon Doe</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>INV-0123</td>
-                                <td>Jhon Doe</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>INV-0123</td>
-                                <td>Jhon Doe</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><a class="btn btn-sm btn-primary" href="">Ver Detalles</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <!-- Recent Sales End -->
-
-
-        <!-- Widgets Start -->
-        <div class="px-4 pt-4 container-fluid">
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                    <div class="p-4 rounded h-100 bg-light">
-                        <div class="mb-2 d-flex align-items-center justify-content-between">
-                            <h6 class="mb-0">Messages</h6>
-                            <a href="">Show All</a>
-                        </div>
-                        <div class="py-3 d-flex align-items-center border-bottom">
-                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h6 class="mb-0">Jhon Doe</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                                <span>Short message goes here...</span>
-                            </div>
-                        </div>
-                        <div class="py-3 d-flex align-items-center border-bottom">
-                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h6 class="mb-0">Jhon Doe</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                                <span>Short message goes here...</span>
-                            </div>
-                        </div>
-                        <div class="py-3 d-flex align-items-center border-bottom">
-                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h6 class="mb-0">Jhon Doe</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                                <span>Short message goes here...</span>
-                            </div>
-                        </div>
-                        <div class="pt-3 d-flex align-items-center">
-                            <img class="flex-shrink-0 rounded-circle" src="/img/usuario.svg" alt="" style="width: 40px; height: 40px;">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h6 class="mb-0">Jhon Doe</h6>
-                                    <small>15 minutes ago</small>
-                                </div>
-                                <span>Short message goes here...</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                    <div class="p-4 rounded h-100 bg-light">
-                        <div class="mb-4 d-flex align-items-center justify-content-between">
-                            <h6 class="mb-0">Calender</h6>
-                            <a href="">Show All</a>
-                        </div>
-                        <div id="calender"></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                    <div class="p-4 rounded h-100 bg-light">
-                        <div class="mb-4 d-flex align-items-center justify-content-between">
-                            <h6 class="mb-0">To Do List</h6>
-                            <a href="">Show All</a>
-                        </div>
-                        <div class="mb-2 d-flex">
-                            <input class="bg-transparent form-control" type="text" placeholder="Enter task">
-                            <button type="button" class="btn btn-primary ms-2">Add</button>
-                        </div>
-                        <div class="py-2 d-flex align-items-center border-bottom">
-                            <input class="m-0 form-check-input" type="checkbox">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                    <span>Short task goes here...</span>
-                                    <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-2 d-flex align-items-center border-bottom">
-                            <input class="m-0 form-check-input" type="checkbox">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                    <span>Short task goes here...</span>
-                                    <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-2 d-flex align-items-center border-bottom">
-                            <input class="m-0 form-check-input" type="checkbox" checked>
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                    <span><del>Short task goes here...</del></span>
-                                    <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-2 d-flex align-items-center border-bottom">
-                            <input class="m-0 form-check-input" type="checkbox">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                    <span>Short task goes here...</span>
-                                    <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-2 d-flex align-items-center">
-                            <input class="m-0 form-check-input" type="checkbox">
-                            <div class="w-100 ms-3">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                    <span>Short task goes here...</span>
-                                    <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Widgets End -->
 
 
         <!-- Footer Start -->
