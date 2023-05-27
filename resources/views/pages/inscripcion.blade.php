@@ -91,36 +91,87 @@
 
         <div class="px-4 pt-4 container-fluid">
             <div class="row g-4">
-                <div class="col-sm-12 col-xl-6">
+                <div class="col-sm-12 col-xl-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-dark"><strong>Evento:</strong> {{ $eventos->nombre }}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-dark"><strong>Lugar:</strong> {{ $eventos->lugar }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-dark"><strong>Fecha de inicio:</strong> {{ $eventos->fecha_inicio }}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-dark"><strong >Fecha de fin:</strong> {{ $eventos->fecha_fin }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-dark"><strong>Precio:</strong> ${{ $eventos->precio }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="p-4 rounded bg-light h-100">
-                        <h6 class="mb-4">Formulario Inscripción Evento </h6>
-                        <form>
+                        <h6 class="mb-4">Formulario Inscripción</h6>
+                        <form action="{{route('cliente.store')}}" method="POST" novalidate >
+                            @csrf
                             <div class="mb-3">
-                                <label for="inputName" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="inputName"">
+                                <label for="nombre" class=" form-label-sm text-primary">Nombre</label>
+                                <input type="text" class="form-control @error('nombre') border-danger
+                                @enderror" id="nombre" name="nombre" value="{{old('nombre')}}" required>
+                            
+                            @error('nombre')
+                            <p class="text-danger">{{$message}}</p>   
+                            @enderror
                             </div>
 
                             <div class="mb-3">
-                                <label for="inputLastName" class="form-label">Apellidos</label>
-                                <input type="text" class="form-control" id="inputLastName"">
+                                <label for="apellidos" class="form-label-sm text-primary">Apellidos</label>
+                                <input type="text" class="form-control @error('apellidos') border-danger
+                                @enderror" id="apellidos" name="apellidos" value="{{old('apellidos')}}">
+                                
+                                @error('apellidos')
+                            <p class="text-danger">{{$message}}</p>   
+                            @enderror
                             </div>
 
                             <div class="mb-3">
-                                <label for="inputDocument" class="form-label">Documento</label>
-                                <input type="text" class="form-control" id="inputDocument"">
+                                <label for="documento" class="form-label-sm text-primary">Documento</label>
+                                <input type="text" class="form-control @error('documento') border-danger
+                                @enderror" id="documento" name="documento" value="{{old('documento')}}">
+
+                                @error('documento')
+                            <p class="text-danger">{{$message}}</p>   
+                            @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="InputEmail" class="form-label">Correo Electronico</label>
-                                <input type="email" class="form-control" id="InputEmail"
-                                    aria-describedby="emailHelp">
+                                <label for="email" class="form-label-sm text-primary">Correo Electronico</label>
+                                <input type="email" class="form-control @error('email') border-danger
+                                @enderror" id="email"
+                                    aria-describedby="emailHelp" name="email" value="{{old('email')}}">
+
+                                    @error('email')
+                            <p class="text-danger">{{$message}}</p>   
+                            @enderror
                                 <div id="emailHelp" class="form-text">Ingresa tu dirección de correo electronico
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="inputPhone" class="form-label">Telefono</label>
-                                <input type="text" class="form-control" id="inputPhone"">
+                                <label for="telefono" class="form-label-sm text-primary">Telefono</label>
+                                <input type="text" class="form-control @error('telefono') border-danger
+                                @enderror" id="telefono" name="telefono" value="{{old('telefono')}}">
+
+                                @error('telefono')
+                            <p class="text-danger">{{$message}}</p>   
+                            @enderror
                             </div>
-                            
+                            <input type="hidden" name="inputEvent" value="{{ $eventos->id }}">
                             <button type="submit" class="btn btn-primary">Inscribirme</button>
                         </form>
                     </div>
