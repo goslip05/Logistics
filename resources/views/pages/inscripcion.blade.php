@@ -31,12 +31,12 @@
                 </div>
             </div>
             <div class="navbar-nav w-100">
-                <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="index.html" class="nav-item "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Eventos</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Eventos</a>
                     <div class="bg-transparent border-0 dropdown-menu">
-                        <a href="button.html" class="dropdown-item">Ver Eventos</a>
-                        <a href="typography.html" class="dropdown-item">Nuevo Evento</a>
+                        <a href="button.html" class="dropdown-item">Inscripción</a>
+                        
                         {{-- <a href="element.html" class="dropdown-item">Certificados</a> --}}
                     </div>
                 </div>

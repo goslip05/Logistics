@@ -20,4 +20,9 @@ class inscripcion extends Model
         'telefono',
         'id_eventos',
     ];
+
+    public function eventos()
+    {
+        return $this->belongsTo(evento::class, 'id_eventos');
+    }
 }

@@ -90,4 +90,36 @@ class ClienteController extends Controller
             /* dd($e); 
         } */
     }
+
+
+    public function show()
+    {
+        try {
+            
+            $inscripciones = inscripcion::all();
+            return view('pages.inscripciones_ver', [
+                'inscripciones'=> $inscripciones
+            ]);
+
+        } catch (\Exception $e) {
+            dd($e);
+        }
+    }
+
+    public function ver($id)
+    {
+        try {
+            
+            $cliente = inscripcion::where('id',$id)->first();
+
+            
+
+            return view('pages.clientesVer', [
+                'cliente'=> $cliente
+            ]);
+
+        } catch (\Exception $e) {
+            dd($e);
+        }
+    }
 }

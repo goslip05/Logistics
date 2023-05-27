@@ -30,6 +30,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/clientes/inscripcion',[ClienteController::class, 'index'] )->name('cliente.index');
     Route::post('clientes/inscripcion/store',[ClienteController::class, 'store'] )->name('cliente.store');
+    Route::get('clientes/show',[ClienteController::class, 'show'] )->name('cliente.show');
+    Route::get('clientes/show/{id}',[ClienteController::class, 'ver'] )->name('cliente.ver');
 
 
 

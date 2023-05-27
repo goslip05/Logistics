@@ -47,7 +47,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Clientes</a>
                     <div class="bg-transparent border-0 dropdown-menu">
-                        <a href="signin.html" class="dropdown-item">Ver Clientes</a>
+                        <a  href="{{ route('cliente.show') }}" class="dropdown-item">Ver Clientes</a>
                         <a href="signup.html" class="dropdown-item">Registrar cliente</a>
                         {{-- <a href="404.html" class="dropdown-item">404 Error</a>
                         <a href="blank.html" class="dropdown-item">Blank Page</a> --}}
