@@ -299,14 +299,22 @@
 }
 .book__logo {
     grid-area: logo;
+    
 }
 .book__publisher {
     align-items: center;
     display: flex;
     grid-area: publisher;
+    
+    
 }
 .book__pre-title {
     grid-area: pre-title;
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
 }
 .book__title {
     align-items: center;
@@ -317,6 +325,10 @@
 }
 .book__pre-author {
     grid-area: pre-author;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+ 
 }
 .book__author {
     align-items: center;
@@ -326,7 +338,9 @@
 .book__artwork {
     grid-area: artwork;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    align-items: center;
+   
 }
 .penguin-logo {
     display: block;
@@ -376,8 +390,8 @@
     border-bottom: 1px solid;
 }
 .book--conference .book__artwork {
-    background-color: #fff;
-    background-image: linear-gradient(106deg, #d24d57 0%, #d24d57 25%, #59abe3 25%, #59abe3 50%, #4daf7c 50%, #4daf7c 75%, #f5d65a 75%, #f5d65a 100%);
+    background-color: #85837e;
+    
 }
 .book--conference .frontendne-logo {
     fill: #fff;

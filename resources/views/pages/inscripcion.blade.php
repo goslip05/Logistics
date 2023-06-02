@@ -183,50 +183,75 @@
                               <div class="book__logo">
                                 <svg class="penguin-logo"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                   <path  stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"/>
-                                  <ellipse cx="13.2" cy="3.5" transform="rotate(-55.702 13.178 3.54)" rx=".9" ry=".7"/>
+                                  <ellipse cx="13.2" cy="3.5" transform="rotate(-55.702 13.178 3.54)" rx=".9" ry=".7"/>  
                                 </svg>
+                                
                               </div>
+                                
                               <div class="book__publisher">
                                 Logistics Presenta
                               </div>
-   
+                              <div class="book__pre-title">{{ $eventos->nombre }}</div>
                               <div class="book__title">
-                                {{ $eventos->nombre }}
+                                
                               </div>
-                              <div class="book__pre-author"></div>
+                              <div class="book__pre-author" ><strong>Fecha inicio:&nbsp;  </strong> {{  $eventos->fecha_inicio }}</div>
                               <div class="book__author">
-                                Sam Beckham
+                                <strong>Fecha fin:&nbsp;  </strong>  {{ $eventos->fecha_fin }}
                               </div>
                               <div class="book__artwork">
-                                <svg class="penguin-artwork" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.1 44.8">
-                                  <path d="M21.9 16.5c-1.6-2.6-3.9-5.7-4.2-8.9-.2-2 0-4.2-1.4-5.9-.4-.5-.9-.9-1.5-1.2-.6-.3-1.3-.5-2-.5-.6 0-1.3.1-1.9.3-.7.2-1.4.5-2.1.6C8 1 7.3.9 6.4.7 6 .6 5.8.6 5.3.5 5 .4 4.3.2 4.1.5c-.6.5.6 1.2 1 1.4.8.6 1.1.7 1.8 1.4 1 .9 1.8 1.9 2.1 3.2.1.4.1.8.1 1.1.1 5.6-9.2 11.1-9.1 21 0 3.5 1.9 4.1 1.9 2.1 0-2.3.8-4.8 1.6-6.9.2-.5.8-.6.7.2-.2 1.4-.8 3.7-.7 7.5 0 .9.1 1.8.2 2.8.1.7.3 1.5.5 2.2.2.6.4 1.2.7 1.7.2.4.5.8.8 1.2.3.4.6.6 1 .9.2.2.5.3.6.6.2.4-.4.6-.6.7-.3.1-.6.3-.8.4l-1.2.6c-.2.1-.5.2-.7.4s-.3.4 0 .5h.5c.3 0 .6-.1.9.1.4.1.3.5.4.8 0 .4.3.5.6.4.4-.1.6-.4.9-.6.2-.2.4-.4.7-.5.5-.2 1.1-.2 1.6-.1.3 0 .7.1 1-.1.2-.2.1-.7 0-.9-.1-.3-.2-.5-.4-.8-.1-.1-.1-.2-.2-.3-.2-.5 1.5-.9 1.7-.9.8-.2 1.7-.4 2.5-.5.8-.1 1.7-.1 2.5.2.3.1.6.4.8.6.1.2.4.6.2.8-.4.3-.8.5-1.2.8-.2.2-.5.4-.7.6-.2.2-.2.5.1.5h1.2c.3 0 .6 0 .9.2.4.3.5.9.9 1.1.1.1.3.1.4 0 .3-.1.4-.4.6-.6.1-.2.3-.4.5-.6.1-.1.3-.1.5-.1h.9c.2 0 .6.1.8 0 .4-.3-.6-1-.9-1.1-.5-.3-1.2-.6-1.3-1.2-.2-.7.2-1.5.5-2.1.3-.7.8-1.3 1-2 .2-.6.4-1.3.5-2 .5-3.7-.3-7.7-1.4-11.3-.1-.4-.3-.9-.4-1.3-.2-.7.5-.8.8-.2.3.6 2.4 4.6 3 7.6.4 1.9 1.8 2 1.8-1.4-.2-5-2-8.5-4.3-12.1zM11.7 2.4c.6-.9 1.6-1.2 2.4-.7.7.5.9 1.6.3 2.5s-1.7 1.1-2.4.6c-.8-.4-.9-1.5-.3-2.4zm-.7 6c1.1-.8 3.7-1.2 4.4-4.3-.1-.1.1-.3.4 0 .6.6.5 3.3-.4 4.3-.5.5-1.4.6-2.1.7-.8.1-1.6.3-2.3.5s-.7-.6 0-1.2zm6.7 29.7c-.8 0-1.8-.5-3.3-.4-2.5.2-3.3 1.1-5.3.8-1.2-.2-2-.9-2.5-2-.6-1.4-.6-2.8-.7-4.2-.1-1.6-.1-3.1 0-4.7l.3-3.4c.2-1.8.6-3.7 1.1-5.5.4-1.6.8-3.2 1.4-4.7.5-1.1 1.3-2.2 2.4-2.7 1.2-.6 2.9-.7 4.1 0 2.7 1.4 2.6 4.6 2.7 7.2.1 2 .3 4.1.7 6.1.4 2.3 1.3 4.4 1.6 6.6.3 2.5.5 6.7-2.5 6.9z"/>
-                                  <ellipse cx="13.2" cy="3.5" transform="rotate(-55.702 13.178 3.54)" rx=".9" ry=".7"/>
-                                </svg>
+                                <img src="/img/arq3.jpg" alt="" style="width: 600px; height: 450px;">
                               </div>
                             </div>
                 
                             <div class="book book--conference">
                                 <div class="book__logo">
-                                  <svg class="penguin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.1 44.8">
-                                    <path d="M21.9 16.5c-1.6-2.6-3.9-5.7-4.2-8.9-.2-2 0-4.2-1.4-5.9-.4-.5-.9-.9-1.5-1.2-.6-.3-1.3-.5-2-.5-.6 0-1.3.1-1.9.3-.7.2-1.4.5-2.1.6C8 1 7.3.9 6.4.7 6 .6 5.8.6 5.3.5 5 .4 4.3.2 4.1.5c-.6.5.6 1.2 1 1.4.8.6 1.1.7 1.8 1.4 1 .9 1.8 1.9 2.1 3.2.1.4.1.8.1 1.1.1 5.6-9.2 11.1-9.1 21 0 3.5 1.9 4.1 1.9 2.1 0-2.3.8-4.8 1.6-6.9.2-.5.8-.6.7.2-.2 1.4-.8 3.7-.7 7.5 0 .9.1 1.8.2 2.8.1.7.3 1.5.5 2.2.2.6.4 1.2.7 1.7.2.4.5.8.8 1.2.3.4.6.6 1 .9.2.2.5.3.6.6.2.4-.4.6-.6.7-.3.1-.6.3-.8.4l-1.2.6c-.2.1-.5.2-.7.4s-.3.4 0 .5h.5c.3 0 .6-.1.9.1.4.1.3.5.4.8 0 .4.3.5.6.4.4-.1.6-.4.9-.6.2-.2.4-.4.7-.5.5-.2 1.1-.2 1.6-.1.3 0 .7.1 1-.1.2-.2.1-.7 0-.9-.1-.3-.2-.5-.4-.8-.1-.1-.1-.2-.2-.3-.2-.5 1.5-.9 1.7-.9.8-.2 1.7-.4 2.5-.5.8-.1 1.7-.1 2.5.2.3.1.6.4.8.6.1.2.4.6.2.8-.4.3-.8.5-1.2.8-.2.2-.5.4-.7.6-.2.2-.2.5.1.5h1.2c.3 0 .6 0 .9.2.4.3.5.9.9 1.1.1.1.3.1.4 0 .3-.1.4-.4.6-.6.1-.2.3-.4.5-.6.1-.1.3-.1.5-.1h.9c.2 0 .6.1.8 0 .4-.3-.6-1-.9-1.1-.5-.3-1.2-.6-1.3-1.2-.2-.7.2-1.5.5-2.1.3-.7.8-1.3 1-2 .2-.6.4-1.3.5-2 .5-3.7-.3-7.7-1.4-11.3-.1-.4-.3-.9-.4-1.3-.2-.7.5-.8.8-.2.3.6 2.4 4.6 3 7.6.4 1.9 1.8 2 1.8-1.4-.2-5-2-8.5-4.3-12.1zM11.7 2.4c.6-.9 1.6-1.2 2.4-.7.7.5.9 1.6.3 2.5s-1.7 1.1-2.4.6c-.8-.4-.9-1.5-.3-2.4zm-.7 6c1.1-.8 3.7-1.2 4.4-4.3-.1-.1.1-.3.4 0 .6.6.5 3.3-.4 4.3-.5.5-1.4.6-2.1.7-.8.1-1.6.3-2.3.5s-.7-.6 0-1.2zm6.7 29.7c-.8 0-1.8-.5-3.3-.4-2.5.2-3.3 1.1-5.3.8-1.2-.2-2-.9-2.5-2-.6-1.4-.6-2.8-.7-4.2-.1-1.6-.1-3.1 0-4.7l.3-3.4c.2-1.8.6-3.7 1.1-5.5.4-1.6.8-3.2 1.4-4.7.5-1.1 1.3-2.2 2.4-2.7 1.2-.6 2.9-.7 4.1 0 2.7 1.4 2.6 4.6 2.7 7.2.1 2 .3 4.1.7 6.1.4 2.3 1.3 4.4 1.6 6.6.3 2.5.5 6.7-2.5 6.9z"/>
-                                    <ellipse cx="13.2" cy="3.5" transform="rotate(-55.702 13.178 3.54)" rx=".9" ry=".7"/>
-                                  </svg>
+                                    <svg class="penguin-logo"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path  stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"/>
+                                        <ellipse cx="13.2" cy="3.5" transform="rotate(-55.702 13.178 3.54)" rx=".9" ry=".7"/>  
+                                      </svg>
                                 </div>
                                 <div class="book__publisher">
-                                  a Penguin Promotion
+                                  Lugar:
                                 </div>
-                                <div class="book__pre-title"></div>
+                                <div class="book__pre-title"  style="margin-left: 10px; width:400px;">{{ $eventos->lugar }}</div>
                                 <div class="book__title">
-                                  Frontend NE: The Conference
+                                    
                                 </div>
-                                <div class="book__pre-author"></div>
+                                <div class="book__pre-author"  style="margin-left: 10px; width:400px;">Bogota D.C - Sede Sur - Cl. 22 Sur #12D-81</div>
                                 <div class="book__author">
-                                  Shamus Plugg
+                                  
                                 </div>
                                 <div class="book__artwork">
-                                  <svg class="frontendne-logo" xmlns="http://www.w3.org/2000/svg" width="8em" height="8em" viewBox="0 0 120 120" preserveAspectRatio="xMaxYMax meet"><path d="M86.67 43.33L120 43.33 120 76.67 86.67 76.67 86.67 43.33ZM0 86.67L120 86.67 120 120 0 120 0 86.67ZM0 0L120 0 120 33.33 0 33.33 0 0ZM0 43.33L76.67 43.33 76.67 76.67 0 76.67 0 43.33Z"></path></svg>
+                                    <img src="/img/uan.jpg" alt="" style="width: 600px; ">
                                 </div>
                               </div>
+
+                              <div class="book book--1984">
+                                <div class="book__logo" >
+                                    <svg class="penguin-logo"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path  stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"/>
+                                        <ellipse cx="13.2" cy="3.5" transform="rotate(-55.702 13.178 3.54)" rx=".9" ry=".7"/>  
+                                      </svg>
+                                </div>
+                                <div class="book__publisher">
+                                  Conferencista:
+                                </div>
+                                <div class="book__pre-title" style="margin-left: 10px; width:400px;">                                  
+                                    Josue Emanuel Gonzalez Trujillo</div>
+                                <div class="book__title">
+                                   
+                                </div>
+                                <div class="book__pre-author"><strong>Profesor:&nbsp;  </strong> Arquitectura de software </div>
+                                <div class="book__author">
+                                   <strong> Precio:&nbsp;  </strong> ${{ $eventos->precio }}
+                                </div>
+                                <div class="book__artwork">
+                                    <img src="/img/confe.jpg" alt="" style="width: 600px; height: 450px; ">
+                                </div>
+                              </div>
+
+                              
                 
                 
                         </div>
