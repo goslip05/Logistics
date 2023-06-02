@@ -275,3 +275,149 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+* {
+    box-sizing: border-box;
+}
+.books {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 2em;
+    perspective: 2000px;
+}
+.book {
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: grid;
+    font-family: "helvetica", "arial", sans-serif;
+    grid-template-areas: "logo publisher" "pre-title title" "pre-author author" "artwork artwork";
+    grid-template-columns: 45%;
+    grid-template-rows: 10.34% 11.72% 6.35%;
+    height: 582.4908px;
+    width: 600px;
+}
+.book__logo {
+    grid-area: logo;
+}
+.book__publisher {
+    align-items: center;
+    display: flex;
+    grid-area: publisher;
+}
+.book__pre-title {
+    grid-area: pre-title;
+}
+.book__title {
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    grid-area: title;
+}
+.book__pre-author {
+    grid-area: pre-author;
+}
+.book__author {
+    align-items: center;
+    display: flex;
+    grid-area: author;
+}
+.book__artwork {
+    grid-area: artwork;
+    overflow: hidden;
+    position: relative;
+}
+.penguin-logo {
+    display: block;
+    fill: currentcolor;
+    height: 100%;
+    padding: 0.7em;
+    transform: scaleX(-1);
+}
+.book--the-case-of-the-marber {
+    background-color: #f9f2e2;
+    color: #393a3b;
+}
+.book--the-case-of-the-marber .book__artwork, .book--the-case-of-the-marber .book__pre-author, .book--the-case-of-the-marber .book__author {
+    background-color: #5c9ea1;
+    color: #f9f2e2;
+}
+.book--the-case-of-the-marber .book__logo, .book--the-case-of-the-marber .book__publisher, .book--the-case-of-the-marber .book__pre-author, .book--the-case-of-the-marber .book__author {
+    border-bottom: 1px solid;
+}
+.book--the-case-of-the-marber .penguin-artwork {
+    fill: 393a 3b;
+    position: absolute;
+    top: 30%;
+}
+.book--smashing {
+    background-color: #fff;
+    color: #891b1f;
+}
+.book--smashing .book__logo, .book--smashing .book__publisher, .book--smashing .book__pre-title, .book--smashing .book__title {
+    border-bottom: 1px solid;
+}
+.book--smashing .book__artwork {
+    background-color: #98d6f7;
+}
+.book--smashing .smashing-cat {
+    position: absolute;
+    bottom: -2em;
+    left: -3em;
+    width: 120%;
+    transform: scaleX(-1);
+}
+.book--conference {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+.book--conference .book__logo, .book--conference .book__publisher, .book--conference .book__pre-title, .book--conference .book__title {
+    border-bottom: 1px solid;
+}
+.book--conference .book__artwork {
+    background-color: #fff;
+    background-image: linear-gradient(106deg, #d24d57 0%, #d24d57 25%, #59abe3 25%, #59abe3 50%, #4daf7c 50%, #4daf7c 75%, #f5d65a 75%, #f5d65a 100%);
+}
+.book--conference .frontendne-logo {
+    fill: #fff;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.book--1984 {
+    background-color: #f9f2e2;
+    color: #393a3b;
+}
+.book--1984 .book__artwork, .book--1984 .book__pre-author, .book--1984 .book__author {
+    background-color: #df7020;
+    color: #f9f2e2;
+}
+.book--1984 .book__logo, .book--1984 .book__publisher, .book--1984 .book__pre-author, .book--1984 .book__author {
+    border-bottom: 1px solid;
+}
+.book--1984 .redact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    height: 300px;
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores compatibles */
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 0.5em; /* Ajusta el ancho de la barra de desplazamiento */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del pulgar de la barra de desplazamiento */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #f1ecec; /* Color del pulgar de la barra de desplazamiento en estado de hover */
+}
