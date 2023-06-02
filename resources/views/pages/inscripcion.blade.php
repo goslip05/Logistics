@@ -128,7 +128,7 @@
                         <form action="{{route('cliente.store')}}" method="POST" novalidate >
                             @csrf
                             <div class="mb-3">
-                                <label for="nombre" class=" form-label-sm text-primary">Nombre</label>
+                                <label for="nombre" class=" form-label-sm text-primary">* Nombre</label>
                                 <input type="text" class="form-control @error('nombre') border-danger
                                 @enderror" id="nombre" name="nombre" value="{{old('nombre')}}" required>
                             
@@ -138,7 +138,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="apellidos" class="form-label-sm text-primary">Apellidos</label>
+                                <label for="apellidos" class="form-label-sm text-primary">* Apellidos</label>
                                 <input type="text" class="form-control @error('apellidos') border-danger
                                 @enderror" id="apellidos" name="apellidos" value="{{old('apellidos')}}">
                                 
@@ -148,7 +148,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="documento" class="form-label-sm text-primary">Documento</label>
+                                <label for="documento" class="form-label-sm text-primary">* Documento</label>
                                 <input type="text" class="form-control @error('documento') border-danger
                                 @enderror" id="documento" name="documento" value="{{old('documento')}}">
 
@@ -157,7 +157,7 @@
                             @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label-sm text-primary">Correo Electronico</label>
+                                <label for="email" class="form-label-sm text-primary">* Correo Electronico</label>
                                 <input type="email" class="form-control @error('email') border-danger
                                 @enderror" id="email"
                                     aria-describedby="emailHelp" name="email" value="{{old('email')}}">
@@ -169,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="telefono" class="form-label-sm text-primary">Telefono</label>
+                                <label for="telefono" class="form-label-sm text-primary">* Telefono</label>
                                 <input type="text" class="form-control @error('telefono') border-danger
                                 @enderror" id="telefono" name="telefono" value="{{old('telefono')}}">
 

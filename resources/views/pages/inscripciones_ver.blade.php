@@ -27,7 +27,7 @@
                 </div>
                 <div class="ms-3">
                     <h6 class="mb-0">{{ Auth::user()->name }}</h6>
-                    <span>Admin</span>
+                    <span>Asesor</span>
                 </div>
             </div>
             <div class="navbar-nav w-100">
