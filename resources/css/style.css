@@ -435,3 +435,13 @@
 .scroll-container::-webkit-scrollbar-thumb:hover {
     background-color: #f1ecec; /* Color del pulgar de la barra de desplazamiento en estado de hover */
 }
+
+.feedback {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.success {
+    background-color: green;
+}

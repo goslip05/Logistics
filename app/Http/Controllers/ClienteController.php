@@ -49,8 +49,8 @@ class ClienteController extends Controller
             $request->session()->put('mensaje', 'Campos incompletos');
         }
         
-        return redirect()->back()->with('success', 'La inscripción ha sido guardada exitosamente.');
-        return back();
+        return redirect()->back()->with('success', 'Inscripción Exitosa, Espera que el Asesor apruebe el pago.');
+        
         /* try {
             
             $this->validate($request,[

@@ -92,6 +92,11 @@
         <div class="px-4 pt-4 container-fluid">
             <div class="row g-4">
                 <div class="col-sm-12 col-xl-12">
+                    @if(session('success'))
+                            <div class="feedback success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
                     <h4 class="ml-4 text-primary" style="margin-left: 10px; ">Inscripción a Evento:</h4>
                   {{--   <div class="container">
                         <div class="row">
@@ -175,6 +180,8 @@
                             <input type="hidden" name="inputEvent" value="{{ $eventos->id }}">
                             <button type="submit" class="btn btn-primary">Inscribirme</button>
                         </form>
+                        
+
                     </div>
 
                     <div class="scroll-container" style="overflow-y: auto; height: 500px;">
@@ -263,6 +270,9 @@
                 </div>
             </div>
         </div>
+
+        
+
 
           
 
